@@ -13,6 +13,9 @@ RUN npm install
 # Copiar el resto de la aplicación
 COPY . .
 
+# Cambiar permisos de los archivos
+RUN chmod -R 755 .
+
 # Exponer el puerto
 EXPOSE 8080
 
