@@ -17,7 +17,7 @@ COPY . .
 RUN chmod -R 755 .
 
 # Exponer el puerto
-EXPOSE 8080
+EXPOSE 3000
 
 # Comando para ejecutar la aplicación
 CMD ["node", "app.js"]
